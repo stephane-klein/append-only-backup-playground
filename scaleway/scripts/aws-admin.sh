@@ -8,4 +8,4 @@ export AWS_SECRET_ACCESS_KEY=${SCW_SECRET_KEY}
 export AWS_ENDPOINT_URL=https://s3.fr-par.scw.cloud
 export AWS_DEFAULT_REGION=fr-par
 
-aws $@
+aws --no-cli-pager $@
