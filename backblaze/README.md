@@ -1,7 +1,7 @@
 # append-only Backblaze Object Storage configuration
 
 This `/backblaze/` directory contains a [`terraform.tf`](./terraform.tf) file that configures a [Backblaze Cloud Storage](https://www.backblaze.com/cloud-storage) (Object Storage) Bucket
-in [**append-only**](https://notes.sklein.xyz/Write%20Once%20Read%20Many/) or [Write Once Read Many](https://notes.sklein.xyz/Write%20Once%20Read%20Many/) mode.
+in [**append-only**](https://notes.sklein.xyz/Write%20Once%20Read%20Many/) also called [Write Once Read Many](https://notes.sklein.xyz/Write%20Once%20Read%20Many/) mode.
 
 First step to prepare the playground, meaning setting up secrets and installing necessary tools with [Mise](https://mise.jdx.dev/).
 

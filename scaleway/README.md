@@ -1,7 +1,7 @@
 # append-only Scaleway Object Storage configuration
 
 This `/scaleway/` directory contains a [`terraform.tf`](./terraform.tf) file that configures a [Scaleway Object Storage](https://www.scaleway.com/fr/object-storage/) Bucket
-in [**append-only**](https://notes.sklein.xyz/Write%20Once%20Read%20Many/) or [Write Once Read Many](https://notes.sklein.xyz/Write%20Once%20Read%20Many/) mode.
+in [**append-only**](https://notes.sklein.xyz/Write%20Once%20Read%20Many/) also called [Write Once Read Many](https://notes.sklein.xyz/Write%20Once%20Read%20Many/) mode.
 
 First step to prepare the playground, meaning setting up secrets and installing necessary tools with [Mise](https://mise.jdx.dev/).
 
