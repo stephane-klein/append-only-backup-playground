@@ -12,8 +12,8 @@ provider "b2" {
 }
 
 resource "b2_bucket" "sklein_backup_bucket_write_once_read_many" {
-  bucket_name = "sklein-backup-bucket-write-once-read-many"
-  bucket_type = "allPrivate"
+    bucket_name = "sklein-backup-bucket-write-once-read-many"
+    bucket_type = "allPrivate"
 }
 
 resource "b2_application_key" "sklein_backup_bucket_admin_api_key" {
