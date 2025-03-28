@@ -5,8 +5,9 @@ In this "playground" repository, I explore different methods to configure object
 Playgrounds:
 
 - [./scaleway/](./scaleway/)
+- [./scaleway-object-lock/](./scaleway-object-lock/)
 - [./backblaze/](./backblaze/)
 
 Next features I want to add to this repository:
 
-- Add an option to configure the ["lock" system](https://www.scaleway.com/en/docs/object-storage/api-cli/object-lock/#aws-cli-object-lock-configuration) of Scaleway Object Storage and Backblaze
+- Add an option to configure the ["lock" system](https://www.scaleway.com/en/docs/object-storage/api-cli/object-lock/#aws-cli-object-lock-configuration) of Backblaze

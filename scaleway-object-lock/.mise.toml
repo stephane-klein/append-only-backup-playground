@@ -1,0 +1,9 @@
+[tools]
+scaleway-cli="2.37.0"
+terraform="1.11.2"
+awscli="2.22.35" # I use this version to fix « The value specified in the x-amz-trailer header is not supported » error
+                 # Tip found in this thread: https://laracasts.com/discuss/channels/forge/forge-backups-not-working-downgrade-of-aws-cli-is-needed?page=1&replyId=958187</code>
+jq="1.6"
+
+[env]
+_.source = { value = "./.envrc", tools = true }
