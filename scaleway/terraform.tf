@@ -63,6 +63,7 @@ resource "scaleway_object_bucket" "sklein_backup_bucket_write_once_read_many" {
     versioning {
         enabled = true
     }
+    force_destroy = true 
 }
 
 resource "scaleway_object_bucket_acl" "sklein_backup_bucket_write_once_read_many_acl" {

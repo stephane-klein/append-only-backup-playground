@@ -197,3 +197,11 @@ null
     }
 ]
 ```
+
+## Teardown
+
+```sh
+$ ./scripts/destroy-bucket.sh
+...
+$ terraform destroy
+```

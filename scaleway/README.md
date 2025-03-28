@@ -173,3 +173,9 @@ In the bucket policy configuration, it's important not to forget this part:
 
 This declaration allows your user account and terraform to access and modify the created resources.
 For example, without this configuration, you would not be able to access the bucket from the Scaleway Web Console.
+
+## Teardown
+
+```sh
+$ terraform destroy
+```
