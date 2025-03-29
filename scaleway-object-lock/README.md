@@ -201,3 +201,19 @@ In the bucket policy configuration, it's important not to forget this part:
 
 This declaration allows your user account and terraform to access and modify the created resources.
 For example, without this configuration, you would not be able to access the bucket from the Scaleway Web Console.
+
+## Teardown
+
+```sh
+$ ./scripts/disable-object-lock-governance.sh
+Removing lock for: file1.txt
+Removing lock for: file2.txt
+The retention date has been set to tomorrow 2025-03-30T00:00:00.000Z, which is the shortest duration accepted by Scaleway Object Storage.
+You will be able to delete this bucket only in 24h.
+```
+
+24 hours later, execute:
+
+```
+$ terraform destroy
+```

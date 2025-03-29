@@ -61,9 +61,10 @@ resource "scaleway_object_bucket" "sklein_backup_bucket_write_once_read_many" {
     name = "sklein-backup-bucket-write-once-read-many"
     project_id  = var.append_only_backup_playground_project_id
     object_lock_enabled = true
+    force_destroy = true 
 }
 
-resource "scaleway_object_bucket_lock_configuration" "main" {
+resource "scaleway_object_bucket_lock_configuration" "sklein_backup_bucket_write_once_read_many" {
     bucket = scaleway_object_bucket.sklein_backup_bucket_write_once_read_many.name
     project_id  = var.append_only_backup_playground_project_id
 
