@@ -16,7 +16,7 @@ aws s3api --no-cli-pager list-object-versions --bucket sklein-backup-bucket-writ
         --legal-hold Status=OFF
 done
 
-aws --no-cli-pager s3api list-objects-v2 --bucket sklein-backup-bucket-write-once-read-many --endpoint-url https://s3.fr-par.scw.cloud --query "Contents[].{Key:Key}" --output text | while read object_key; do
+aws --no-cli-pager s3api list-objects-v2 --bucket sklein-backup-bucket-write-once-read-many --query "Contents[].{Key:Key}" --output text | while read object_key; do
     echo "Removing lock for: $object_key"
 
     aws s3api put-object-retention \
