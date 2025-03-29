@@ -1,0 +1,7 @@
+[tools]
+terraform="1.11.2"
+awscli="2.22.35" 
+jq="1.6"
+
+[env]
+_.source = { value = "./.envrc", tools = true }
