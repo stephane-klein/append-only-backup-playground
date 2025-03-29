@@ -201,7 +201,7 @@ null
 ## Teardown
 
 ```sh
-$ ./scripts/destroy-bucket.sh
+$ ./scripts/destroy-bucket-objects.sh
 ...
 $ terraform destroy
 ```
