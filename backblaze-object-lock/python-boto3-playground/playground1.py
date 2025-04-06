@@ -19,8 +19,13 @@ s3_client = session.client(
     )
 )
 
-s3_client.put_object(
-    Body="Foobar",
+# s3_client.put_object(
+#     Body="Foobar",
+#     Bucket="sklein-backup-bucket-write-once-read-many",
+#     Key="test_boto3_admin.txt"
+# )
+s3_client.upload_file(
+    Filename="README.md",
     Bucket="sklein-backup-bucket-write-once-read-many",
     Key="test_boto3_admin.txt"
 )
